@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+/* Base Config */
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -36,6 +46,8 @@ body {
 .insights {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 .image {
@@ -54,9 +66,9 @@ body {
   border-radius: 0 10px 10px 0;
 }
 
-/* Text Config */
+/* TEXT CONFIG*/
 h1,
-p,
-h2 {
-  color: white;
+.heavy {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
