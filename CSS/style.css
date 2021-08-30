@@ -9,3 +9,54 @@
 .frame {
   border: 1px solid red;
 }
+
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+
+.card {
+  margin: 220px auto;
+  width: 1110px;
+  height: 445px;
+  display: grid;
+  grid-template-columns: 570px 540px;
+  grid-template-areas: "mark image";
+  border-radius: 10px;
+}
+
+.marketing {
+  grid-area: "mark";
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 80px 0 20px;
+}
+
+.insights {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image {
+  grid-area: "image";
+  background: url(/images/image-header-desktop.jpg);
+  object-fit: contain;
+  background-repeat: none;
+  border-radius: 0 10px 10px 0;
+}
+
+.tint {
+  height: 445px;
+  width: 540px;
+  background-color: hsl(277, 61%, 36%);
+  opacity: 0.55;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Text Config */
+h1,
+p,
+h2 {
+  color: white;
+}
